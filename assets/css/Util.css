@@ -276,3 +276,14 @@ layout: Stylesheet
 .margin-bottom-30-neg {
     margin-bottom: -30px  !important;
 }
+
+.image-default-size {
+    min-width: max-content;
+    margin-left: 0%;
+}
+
+.post-title {
+    margin: 0;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 700;
+}

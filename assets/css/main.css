@@ -192,7 +192,8 @@ html {
 img,
 video {
   height: auto;
-  max-width: 100%; }
+  min-width: 150%;
+  margin-left: -25%; }
 
 iframe {
   border: 0; }
@@ -990,8 +991,8 @@ a.box-feed:active {
     margin-left: 0.25em;
     margin-right: calc(-0.5em - 1px); }
   .button .icon:first-child:last-child {
-    margin-left: calc(-0.5em - 1px);
-    margin-right: calc(-0.5em - 1px); }
+    margin-left: 0.5em;
+    margin-right: 0.5em; }
   .button:hover, .button.is-hovered {
     border-color: #b5b5b5;
     color: var(--color-border-dark); }
@@ -1889,6 +1890,7 @@ a.tag:hover {
   margin-bottom: 1rem; }
 
 .navbar {
+  margin-top: -1em;
   min-height: 3.25rem;
   position: relative;
   z-index: 30; }
