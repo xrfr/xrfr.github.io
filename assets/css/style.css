@@ -20,7 +20,7 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-    --color-bg-main: #262626;
+    --color-bg-main: #111111;
     --color-bg-sub: #18181C;
     --color-text-main: #FAFAFC;
     --color-text-sub: #FFFEFF;
@@ -34,7 +34,7 @@ html[data-theme="dark"] {
 
     html,
     html[data-theme="dark"] {
-        --color-bg-main: #262626;
+        --color-bg-main: #111111;
         --color-bg-sub: #18181C;
         --color-text-main: #FAFAFC;
         --color-text-sub: #FFFEFF;
@@ -185,6 +185,7 @@ body {
 
 .section {
     padding-top: var(--padding-broad);
+    min-height: 80vh;
 }
 
 
