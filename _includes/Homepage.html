@@ -4,7 +4,18 @@
     </div>
     <div class="home-sub-text">
       <h3>
-        sample content
+        <span>A <a href="/notes">garden</a> of notes about </span>
+        {%- assign tags = "" | split: "," -%}
+        {%- for note in site.notes -%}
+          {%- assign tags = tags | concat: note.tags -%}
+        {%- endfor -%}
+        {%- assign tags = tags | sort | uniq -%}
+
+        {%- for tag in tags -%}
+          {%- if forloop.index == forloop.length -%} and {%- else -%}{% endif %}
+          <a href="/tags#{{ tag }}">{{ tag }}</a>
+          {%- if forloop.last -%}{%- else -%}, {% endif -%}
+        {%- endfor %}<span>.</span>
       </h3> 
     </div>
 </div>

@@ -1,5 +1,5 @@
 ---
 layout: Post
-permalink: /posts
-title: All Posts
+permalink: /archive
+title: Notes in Chronological Order
 ---

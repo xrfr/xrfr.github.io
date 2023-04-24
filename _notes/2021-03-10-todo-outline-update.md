@@ -1,5 +1,6 @@
 ---
 title: An Outline Extension for Todo.txt
+feed: show
 ---
 
 # Background

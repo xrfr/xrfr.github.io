@@ -1,5 +1,7 @@
 ---
 title: Exporting Whatsapp Groups
+feed: show
+tags: hacking
 ---
 
 # Problem

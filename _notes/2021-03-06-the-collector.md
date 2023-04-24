@@ -1,5 +1,6 @@
 ---
-title: 'The Collector: Data-hoarding HTML Files'
+title: 'The Collector: Data-hoarding Webpages'
+feed: show
 ---
 
 # Introduction
@@ -10,12 +11,12 @@ Collecting HTML files to build a knowledge base.
 
 ### Third-Party Sources
 
-- [ ] firefox bookmarks
-- [ ] pocket links
-- [ ] hacker news likes
-- [ ] reddit upvotes
-- [ ] feedly saved links
-- [ ] youtube likes
+- [ ] Firefox bookmarks
+- [ ] Pocket links
+- [ ] Hacker news likes
+- [ ] Reddit upvotes
+- [ ] Feedly saved links
+- [ ] Youtube likes
 
 These are all third party services that we want integrations for.
 We want to bring data from each of these sources into our main feed, so that:

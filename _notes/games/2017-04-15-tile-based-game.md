@@ -1,12 +1,15 @@
 ---
 title: Tile-based Multiplayer Game
+feed: show
+tags: games
 ---
 
 ### Table of Contents
 1. [Introduction](#intro)
 1. [Components](#components)
-1. [Deploying](#deploying)
 1. [Map Generation](#map)
+1. [Deploying](#deploying)
+1. [Demo](#demo)
 
 > Aprl 15th, 2017
 
@@ -30,45 +33,6 @@ Here's an overview of the components:
   - tile based map and movement system
   - handles animations and keeping the player facing in the right direction
   - retro graphics stolen from old pokemon spritesheets
-
-<span id="deploying"></span>
-### Deploying
-
-Configure nginx to point `/vedicmath/client` to the web frontend and `/vedicmath/ws` to the websocket port.
-The websocket code is from the [nginx docs](https://www.nginx.com/blog/websocket-nginx/).
-
-```nginx
-http {
-  ...
-  upstream vedicmath_ws {
-    server 127.0.0.1:10001;
-  }
-
-  map $http_upgrade $connection_upgrade {
-    default upgrade;
-    '' close;
-  }
-
-  server {
-    listen 80;
-    server_name sachin.rudraraju.xyz www.sachin.rudraraju.xyz;
-    root /home/sachin/sachin.rudraraju.xyz;
-
-    location /vedicmath/client {
-      alias /home/sachin/vedicmath/frontend/www;
-      index index.html index.htm;
-      try_files $uri.html $uri $uri/ =404;
-    }
-
-    location /vedicmath/ws {
-      proxy_pass http://vedicmath_ws;
-      proxy_http_version 1.1;
-      proxy_set_header Upgrade $http_upgrade;
-      proxy_set_header Connection $connection_upgrade;
-    }
-  }
-}
-```
 
 <span id="map"></span>
 ### Map Generation
@@ -279,6 +243,47 @@ implemented later._
       tiles' = addPath tiles []
 ```
 
+<span id="deploying"></span>
+### Deploying
+
+Configure nginx to point `/vedicmath/client` to the web frontend and `/vedicmath/ws` to the websocket port.
+The websocket code is from the [nginx docs](https://www.nginx.com/blog/websocket-nginx/).
+
+```nginx
+http {
+  ...
+  upstream vedicmath_ws {
+    server 127.0.0.1:10001;
+  }
+
+  map $http_upgrade $connection_upgrade {
+    default upgrade;
+    '' close;
+  }
+
+  server {
+    listen 80;
+    server_name player.one.xyz www.player.one.xyz;
+    root /home/player/player.one.xyz;
+
+    location /vedicmath/client {
+      alias /home/player/vedicmath/frontend/www;
+      index index.html index.htm;
+      try_files $uri.html $uri $uri/ =404;
+    }
+
+    location /vedicmath/ws {
+      proxy_pass http://vedicmath_ws;
+      proxy_http_version 1.1;
+      proxy_set_header Upgrade $http_upgrade;
+      proxy_set_header Connection $connection_upgrade;
+    }
+  }
+}
+```
+
+
+<span id="demo"></span>
 ### Demo
 
 <!-- ![output1]({{ '/assets/img/vedicmath-map2.png' | asset_url }}) -->
