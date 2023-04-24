@@ -1,5 +1,7 @@
 ---
 title: Reverse-engineering a Streaming Site
+feed: show
+tags: hacking
 ---
 
 ### Table of Contents
@@ -65,11 +67,11 @@ notice calls to an endpoint called `ajax/episode/info`. Interesting... Let's see
 call in this code using `grep`. 
 
 ```bash
-[sachin@macbook processed]$ ls
+[player@macbook processed]$ ls
 xaa.2.js	xad.2.js	xag.2.js	xaj.2.js	xam.2.js	xap.2.js	xas.2.js
 xab.2.js	xae.2.js	xah.2.js	xak.2.js	xan.2.js	xaq.2.js
 xac.2.js	xaf.2.js	xai.2.js	xal.2.js	xao.2.js	xar.2.js
-[sachin@macbook processed]$ grep -rn --color "ajax/episode/info"
+[player@macbook processed]$ grep -rn --color "ajax/episode/info"
 xaq.2.js:87:        Ne = "ajax/episode/info",
 ```
 
@@ -195,7 +197,7 @@ chrome dev tools, we find that ids come as links on the page itself for each ani
 to download their site recursively (following links on the site and downloading them).
 
 ```bash
-[sachin@macbook ]$ wget -r \  # recursively download the website
+[player@macbook ]$ wget -r \  # recursively download the website
                         -c \  # continue downloads if they were left partially downloaded
                         -nc \ # --no-clobber don't redownload pages if they already exist
                         "https://********/"
@@ -216,7 +218,7 @@ sense of humor. Another thing that was happening was the download for `robots.tx
 perhaps another countermeasure?
 
 ```bash
-[sachin@macbook ]$ wget -r -c -nc \
+[player@macbook ]$ wget -r -c -nc \
                         -erobots=off \ # don't worry about getting robots.txt
                         -w 2 \         # wait 2 seconds between each request
                         "https://********/"
@@ -226,7 +228,7 @@ After a bit of progress, I notice that we start to download a bunch of page, one
 These all have the same links in them, so we don't need to get the duplicates. 
 
 ```bash
-[sachin@macbook ]$ wget -r -c -nc -erobots=off -w 2 \
+[player@macbook ]$ wget -r -c -nc -erobots=off -w 2 \
                         --reject-regex "********/watch/*/*" \ # watch urls for this regex and reject those pages
                         "https://********/"
 ```
@@ -236,5 +238,5 @@ get all the pages listed for each genre, and I could guess at how many pages the
 website.
 
 ```bash
-[sachin@macbook ]$ for i in {1..79}; do sleep 1; wget -c -nc -erobots=off "https://********/genre/action?page=$i"; done
+[player@macbook ]$ for i in {1..79}; do sleep 1; wget -c -nc -erobots=off "https://********/genre/action?page=$i"; done
 ```

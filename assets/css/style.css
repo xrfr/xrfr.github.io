@@ -1,7 +1,7 @@
 --- 
 layout: Stylesheet 
 --- 
-@import "fruity.css";
+@import "manni.css";
 
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;400;700&display=swap");
 
@@ -348,6 +348,10 @@ ul ul {
 
 .list-feed a {
     color: var(--color-text-main);
+}
+
+.list-feed a:hover {
+    color: var(--color-text-link);
 }
 
 .list-feed a:hover {

@@ -4,6 +4,5 @@
 _site
 .jekyll-cache
 pages/.DS_Store
-pages/tags.md
 _notes/.obsidian
 _notes/Public/.obsidian

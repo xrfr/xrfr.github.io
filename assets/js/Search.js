@@ -141,7 +141,7 @@
             }
 
             var results = index.query(function (query) {
-                var tokens = lunr.tokenizer(input)
+               var tokens = lunr.tokenizer(input)
                query.term(tokens, {
                  boost: 10
                });

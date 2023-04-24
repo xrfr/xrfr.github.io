@@ -265,6 +265,9 @@ input[type="checkbox"],
 input[type="radio"] {
   vertical-align: baseline; }
 
+.task-list-item-checkbox {
+  margin-right: 0.5em; }
+
 small {
   font-size: 0.875em; }
 
