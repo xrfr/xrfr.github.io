@@ -3,6 +3,20 @@ title: NanoPi M4 NAS
 feed: show
 ---
 
+**Table of Contents**
+
+- [Introduction](#Introduction)
+- [Hardware](#Hardware)
+- [Flashing an OS](#Flashing%20an%20OS)
+	- [FriendlyCore](#FriendlyCore)
+	- [Armbian](#Armbian)
+- [ZFS](#ZFS)
+	- [Installing ZFS](#Installing%20ZFS)
+	- [ZFS RAIDZ Expansion](#ZFS%20RAIDZ%20Expansion)
+	- [Create ZFS Pool](#Create%20ZFS%20Pool)
+- [Applications](#Applications)
+	- [Backing Up Data](#Backing%20Up%20Data)
+	- [Photo Library](#Photo%20Library)
 
 # Introduction
 
@@ -61,3 +75,24 @@ For example, if I have 2 disks, then my data/partiy ratio is 1:1, meaning that o
 
 However, we can get around this by rewriting the old data, giving it the new data/parity ratio.
 
+## Create ZFS Pool
+
+Creating a basic RAIDZ1 pool that allows for one drive to fail without losing data.
+
+```
+# find disk by serial
+lsblk -o name,model,serial
+
+# add discs by serial instead of `/dev/sda`...
+sudo zpool create lake raidz /dev/disk/by-id/XXX /dev/disk/by-id/YYY
+```
+
+# Applications
+
+## Backing Up Data
+
+TODO
+
+## Photo Library
+
+There is a plugin for Nextcloud I want to try out called [memories](https://github.com/pulsejet/memories). This would work as a Google Photos replacement.
