@@ -17,6 +17,8 @@ feed: show
 - [Applications](#Applications)
 	- [Backing Up Data](#Backing%20Up%20Data)
 	- [Photo Library](#Photo%20Library)
+	- [Streaming Music](#Streaming%20Music)
+	- [Streaming Video](#Streaming%20Video)
 
 # Introduction
 
@@ -96,3 +98,11 @@ TODO
 ## Photo Library
 
 There is a plugin for Nextcloud I want to try out called [memories](https://github.com/pulsejet/memories). This would work as a Google Photos replacement.
+
+## Streaming Music
+
+TODO
+
+## Streaming Video
+
+TODO
