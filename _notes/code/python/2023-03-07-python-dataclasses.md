@@ -7,11 +7,8 @@ tag: python
 
 # Introduction
 
-Python `dataclasses` are the bomb.  When modeling some data next time in Python, try using the
-`dataclasses` library, which is available from Python 3.7.  Not only are they fast, they come with
-a bunch of features that make them incredibly powerful.  They aren't
-perfect, and we'll go over some of their shortcomings below, but you'll find them to be an
-invaluable part of your Python toolkit.
+
+Python `dataclasses` are great. Available from Python 3.7,  not only are they fast but also incredibly powerful. While they do have their shortcomings, they're an invaluable part of my Python toolkit.
 
 # Basics
 
