@@ -6,3 +6,4 @@ _site
 pages/.DS_Store
 _notes/.obsidian
 _notes/Public/.obsidian
+.obsidian/workspace.json

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Notes</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-slate.css">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-slate.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="modulepreload" href="./_observablehq/client.js">
+<link rel="modulepreload" href="./_observablehq/runtime.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.js">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/codejar@4.2.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/htl@0.3.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/lodash.debounce@4.0.8/+esm">
+<link rel="modulepreload" href="https://jspm.dev/highlight.js@10.7.1">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/core!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/1c!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/abnf!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/accesslog!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/actionscript!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/ada!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/angelscript!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/apache!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/applescript!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/arcade!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/arduino!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/armasm!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/asciidoc!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/aspectj!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/autohotkey!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/autoit!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/avrasm!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/awk!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/axapta!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/bash!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/basic!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/bnf!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/brainfuck!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/c!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/c-like!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/cal!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/capnproto!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/ceylon!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/clean!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/clojure!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/clojure-repl!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/cmake!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/coffeescript!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/coq!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/cos!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/cpp!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/crmsh!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/crystal!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/csharp!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/csp!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/css!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/d!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/dart!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/delphi!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/diff!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/django!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/dns!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/dockerfile!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/dos!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/dsconfig!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/dts!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/dust!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/ebnf!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/elixir!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/elm!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/erb!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/erlang!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/erlang-repl!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/excel!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/fix!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/flix!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/fortran!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/fsharp!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/gams!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/gauss!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/gcode!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/gherkin!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/glsl!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/gml!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/go!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/golo!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/gradle!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/groovy!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/haml!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/handlebars!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/haskell!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/haxe!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/hsp!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/htmlbars!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/http!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/hy!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/inform7!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/ini!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/irpf90!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/isbl!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/java!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/javascript!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/jboss-cli!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/json!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/julia!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/julia-repl!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/kotlin!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/lasso!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/latex!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/ldif!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/leaf!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/less!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/lisp!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/livecodeserver!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/livescript!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/llvm!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/lsl!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/lua!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/makefile!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/markdown!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/mathematica!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/matlab!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/maxima!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/mel!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/mercury!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/mipsasm!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/mizar!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/mojolicious!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/monkey!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/moonscript!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/n1ql!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/nginx!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/nim!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/nix!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/node-repl!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/nsis!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/objectivec!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/ocaml!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/openscad!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/oxygene!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/parser3!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/perl!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/pf!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/pgsql!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/php!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/php-template!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/plaintext!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/pony!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/powershell!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/processing!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/profile!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/prolog!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/properties!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/protobuf!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/puppet!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/purebasic!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/python!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/python-repl!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/q!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/qml!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/r!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/reasonml!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/rib!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/roboconf!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/routeros!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/rsl!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/ruby!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/ruleslanguage!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/rust!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/sas!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/scala!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/scheme!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/scilab!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/scss!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/shell!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/smali!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/smalltalk!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/sml!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/sqf!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/sql!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/sql_more!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/stan!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/stata!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/step21!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/stylus!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/subunit!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/swift!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/taggerscript!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/tap!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/tcl!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/thrift!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/tp!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/twig!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/typescript!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/vala!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/vbnet!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/vbscript!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/vbscript-html!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/verilog!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/vhdl!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/vim!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/x86asm!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/xl!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/xml!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/xquery!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/yaml!cjs">
+<link rel="modulepreload" href="https://jspm.dev/npm:highlight.js@10.7.1/lib/languages/zephir!cjs">
+<script type="module">
+
+import {define} from "./_observablehq/client.js";
+
+define({id: "c12995ba", inputs: ["view","Editor"], outputs: ["content"], body: (view,Editor) => {
+// const content = view(Editor())
+const content = view(Editor({
+  language: 'js',
+  value: 'console.log("Hello World")'
+}))
+return {content};
+}});
+
+define({id: "434728a4", inputs: ["content","display"], body: async (content,display) => {
+display(await(
+content
+))
+}});
+
+define({id: "2b135274", inputs: ["html","svg"], outputs: ["CodeJar","withLineNumbers","debounce","highlightjs","highlighter","makeEditor","languageLabelStyles","defaultStyles","runButton","Editor"], body: async (html,svg) => {
+const [{CodeJar, withLineNumbers}, {default: debounce}, {default: highlightjs}] = await Promise.all([import("https://cdn.jsdelivr.net/npm/codejar@4.2.0/+esm"), import("https://cdn.jsdelivr.net/npm/lodash.debounce@4.0.8/+esm"), import("https://jspm.dev/highlight.js@10.7.1")]);
+// https://observablehq.com/@cmudig/editor
+// import hljs from 'highlight.js';
+
+// import {CodeJar, withLineNumbers} from 'https://cdn.jsdelivr.net/npm/codejar@3.3.0/codejar.min.js';
+// import debounce from 'https://cdn.skypack.dev/lodash.debounce@4.0.8';
+
+function highlighter(editor) {
+  editor.textContent = editor.textContent;
+  highlightjs.highlightElement(editor)
+}
+
+function makeEditor(defaultOpt) {
+  return (opt = {}) => Editor({...defaultOpt, ...opt})
+}
+
+const languageLabelStyles = `
+  z-index: 1;
+  position: absolute;
+  right: 25px;
+  font-size: 12px;
+  font-family: Menlo,Consolas,monospace;
+  color: black;
+  font-weight: bold;
+  user-select: none;
+  opacity: 0.2;`
+
+const defaultStyles = `
+  border: 1px solid #eee;
+  background: #fafafa;
+  font-family: Menlo,Consolas,monospace;
+  font-size: 13px;
+  padding: 10px;
+  tab-size: 4;
+  line-height: 1.4;
+  overflow-wrap: break-word;`
+
+const runButton = `<path d=" M11.7206 6.94335 C12.2406 7.34365 12.2406 8.12786 11.7206 8.52816L5.60999 13.2321 C4.95242 13.7383 4 13.2696 4 12.4397L4 3.03178 C4 2.20194 4.95243 1.73318 5.60999 2.23937L11.7206 6.94335Z "></path>`;
+
+function Editor(opt = {}) {
+  const {language, styles, value, label, lineNumbers, codeJarOpts, instant, debounced, highlight} = {
+    language: 'plaintext',
+    styles: defaultStyles,
+    value: '',
+    label: '',
+    lineNumbers: false,
+    instant: false,
+    highlight: highlighter,
+    debounced: 0,
+    
+    // TODO: figure out a way to make shift+enter work on indented lines without this
+    codeJarOpts: { preserveIdent: false },
+    ...opt
+  };
+
+  const container = html`<div>`
+
+  const run = html`<div style="display: ${"none"}; position: absolute; right: 10px; cursor: pointer; top: ${label && typeof label == "string" ? "32px" : "7px"}; z-index: 1;">${svg`<svg width=12 height=12 viewbox="0 0 14 14">${runButton}`}`;
+
+  container.addEventListener('mouseenter', (e) => {
+    run.style.display = "inline-block";
+  })
+
+  container.addEventListener('mouseleave', (e) => {
+    run.style.display = "none";
+  })
+  
+  container.append(run)
+  let shiftDown = false;
+
+  let lb;
+  if (label) {
+    const isString = typeof label == "string";
+    lb = html`${isString ? `<label style="display: block; font-family: sans-serif; color: #333; font-size: 0.9em;">${label}:` : label}`;
+    container.append(lb);
+  }
+
+  container.append(html`<span style="${languageLabelStyles}
+    top: ${label && typeof label == "string" ? `35px` : "10px"}">${language}`)
+
+  
+  const ed = html`<div style="${styles} padding-left: ${lineNumbers ? '45px' : '10px'};" class="language-${language}">${value}`;
+  container.appendChild(ed);
+  container.value = value;
+  
+  let jar = CodeJar(ed, lineNumbers ? withLineNumbers(highlight, {
+    // unclear why but this makes line numbers black
+    color: '#fff'
+  }) : highlight, codeJarOpts);
+
+
+  let settingInternally = false
+  // support sending and receiving updates as per https://observablehq.com/@tophtucker/custom-input-example
+  Object.defineProperty(container, "value", {
+    get() {
+      // console.log("editor.get called:", ed.textContent)
+      return ed.textContent;
+    },
+    set(v) {
+      // console.log("editor.set called with: ",v)
+      
+      // Only set this when we are receiving an external message, otherwise it moves the cursor within the input
+      if (!settingInternally) {
+      ed.textContent = v;
+      jar.updateCode(v);
+      }
+      settingInternally = false
+    }
+  });
+  
+  
+  if (lineNumbers) {
+    const lineNumberContainer = container.querySelector('.codejar-linenumbers');
+    lineNumberContainer.style.textAlign = "center";
+    lineNumberContainer.style.fontFamily = "monospace";
+    lineNumberContainer.style.paddingTop = "10px";
+    lineNumberContainer.style.fontSize = "13px";
+  }
+
+  ed.addEventListener('input', (e) => {
+    e.stopPropagation();
+  })
+
+  ed.addEventListener('keydown', (e) => {
+    if (e.key == "Shift") shiftDown = true;
+    if (e.key == "Enter") {
+      if (shiftDown) {
+        e.preventDefault();
+        container.value = ed.textContent;
+        container.dispatchEvent(new CustomEvent("input"));
+      }
+    }
+  })
+
+  run.addEventListener('click', (e) => {
+    container.value = ed.textContent;
+    container.dispatchEvent(new CustomEvent("input"));
+  })
+  
+  ed.addEventListener('keyup', (e) => {
+    if (e.key == "Shift") shiftDown = false;
+  })
+
+  const debouncedUpdate = debounce((code) => {
+    settingInternally = true;
+    container.value = code;
+    container.dispatchEvent(new CustomEvent("input"));
+  }, debounced);
+
+  jar.onUpdate(code => {
+    if (instant || debounced > 0) {
+      debouncedUpdate(code);
+    }
+  })
+
+  const wrap = container.querySelector('.codejar-wrap');
+
+  return container;
+}
+return {CodeJar,withLineNumbers,debounce,highlightjs,highlighter,makeEditor,languageLabelStyles,defaultStyles,runButton,Editor};
+}});
+
+</script>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<div><div id="cell-c12995ba" class="observablehq observablehq--block"></div>
+<pre data-language="js"><code class="language-js"><span class="hljs-comment">// const content = view(Editor())</span>
+<span class="hljs-keyword">const</span> content = <span class="hljs-title function_">view</span>(<span class="hljs-title class_">Editor</span>({
+  <span class="hljs-attr">language</span>: <span class="hljs-string">'js'</span>,
+  <span class="hljs-attr">value</span>: <span class="hljs-string">'console.log("Hello World")'</span>
+}))
+</code></pre>
+</div><div><div id="cell-434728a4" class="observablehq observablehq--block observablehq--loading"></div>
+<pre data-language="js"><code class="language-js">content
+</code></pre>
+</div><div id="cell-2b135274" class="observablehq observablehq--block"></div>
+</main>
+</div>

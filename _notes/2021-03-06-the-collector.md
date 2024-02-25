@@ -11,12 +11,12 @@ Collecting HTML files to build a knowledge base.
 
 ### Third-Party Sources
 
-- [ ] Firefox bookmarks
-- [ ] Pocket links
-- [ ] Hacker news likes
-- [ ] Reddit upvotes
-- [ ] Feedly saved links
-- [ ] Youtube likes
+- Firefox bookmarks
+- Pocket links
+- Hacker news likes
+- Reddit upvotes
+- Feedly saved links
+- Youtube likes
 
 These are all third party services that we want integrations for.
 We want to bring data from each of these sources into our main feed, so that:
