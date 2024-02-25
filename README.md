@@ -1,1 +1,9 @@
-This repo is forked from https://github.com/Jekyll-Garden/jekyll-garden.github.io
+# Commands
+
+```
+# run
+docker-compose up
+```
+
+# [Credits][./_notes/credits.md]
+
