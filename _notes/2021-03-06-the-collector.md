@@ -1,6 +1,6 @@
 ---
 title: 'The Collector: Data-hoarding Webpages'
-feed: show
+feed: hide
 ---
 
 # Introduction
