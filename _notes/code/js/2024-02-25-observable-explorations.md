@@ -1,8 +1,13 @@
 ---
 title: Observable Framework Explorations
-tag: hacking
-feed: hide
+tag: js
+feed: show
 ---
+
+# Introduction
+
+Playing around with Observable Framework.
+Here are some interesting creations.
 
 ## Code Editor
 
