@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Introduction | Notes</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="/assets/js/vendor/observablehq/theme-slate.css">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="/assets/js/vendor/observablehq/stdlib/inputs.css">
+<link rel="stylesheet" type="text/css" href="/assets/js/vendor/observablehq/theme-slate.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="/assets/js/vendor/observablehq/stdlib/inputs.css">
+<link rel="modulepreload" href="/assets/js/vendor/observablehq/client.js">
+<link rel="modulepreload" href="/assets/js/vendor/observablehq/runtime.js">
+<link rel="modulepreload" href="/assets/js/vendor/observablehq/stdlib.js">
+<link rel="modulepreload" href="/assets/js/vendor/observablehq/stdlib/inputs.js">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.13/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/binary-search-bounds@2.0.5/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-array@3.2.4/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-axis@3.0.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-brush@3.0.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-chord@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-color@3.1.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-contour@4.0.2/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-delaunay@6.0.4/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-dispatch@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-drag@3.0.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-dsv@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-ease@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-fetch@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-force@3.0.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-format@3.1.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-geo@3.1.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-geo@3.1.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-hierarchy@3.1.2/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-interpolate@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-path@3.1.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-polygon@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-quadtree@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-random@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3.0.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3.1.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-scale@4.0.2/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-selection@3.0.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-shape@3.2.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-time-format@4.1.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-time@3.1.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-timer@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-transition@3.0.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3-zoom@3.0.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3@7.8.5/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/delaunator@5.0.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/htl@0.3.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/internmap@2.0.3/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/interval-tree-1d@1.0.4/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/isoformat@0.2.1/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/jstodotxt@0.10.0/+esm">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/robust-predicates@3.0.2/+esm">
+<script type="module">
+
+import {define} from "/assets/js/vendor/observablehq/client.js";
+
+define({id: "5ddbeb45", inputs: ["view","Inputs"], outputs: ["startDate","showCompleted","showThreshold"], body: (view,Inputs) => {
+const startDate = view(Inputs.date({label: 'Show Tasks From', value: '2012-01-01'}));
+const showCompleted = view(Inputs.toggle({label: 'Show Completed', value: true}));
+const showThreshold = view(Inputs.toggle({label: 'Show Threshold', value: true}));
+return {startDate,showCompleted,showThreshold};
+}});
+
+define({id: "1be95c3c", inputs: ["Plot","startDate","data","display"], body: async (Plot,startDate,data,display) => {
+display(await(
+Plot.plot({
+    x: {
+        label: null,
+        domain: [
+            startDate,
+            new Date('2030-12-01'),
+        ],
+        grid: true,
+        padding: 0.2
+    },
+    y: {label: null, domain: [0, data.length], padding: 0.2},
+    height: 50 + (data.length * 15),
+    // y: {label: null},
+    marks: [
+        Plot.ruleX([new Date()], {dy: -15}),
+        Plot.ruleY(data, {
+            x1: 'date',
+            x2: 'lastdate',
+            y: 'index',
+            strokeWidth: 1,
+        }),
+        Plot.dot(data, {
+            x: 'date',
+            y: 'index',
+            fill: '#0f0'
+        }),
+        Plot.dot(data, {
+            x: 'threshold',
+            y: 'index',
+            fill: '#ff0'
+        }),
+        Plot.dot(data, {
+            x: 'due',
+            y: 'index',
+            fill: '#f00'
+        }),
+        Plot.dot(data, {
+            x: 'edited',
+            y: 'index',
+            fill: '#00f'
+        }),
+        Plot.text(data, {
+            text: 'text',
+            textAnchor: 'start',
+            x: 'lastdate',
+            y: 'index',
+            size: 12,
+            fill: t => t.complete ? '#fff3' : 
+                t.priority == 'A' ? '#0df' : 
+                t.priority == 'B' ? '#ff0' : 
+                '#fff',
+            dx: 10,
+        }),
+    ]
+})
+))
+}});
+
+define({id: "5d8a1eb7", inputs: ["FileAttachment"], outputs: ["todoArr"], files: [{"name":"./data/todotxt.json","mimeType":"application/json","path":"./file/data/todotxt.json"}], body: (FileAttachment) => {
+const todoArr = FileAttachment('./data/todotxt.json').json();
+return {todoArr};
+}});
+
+define({id: "b5ab444b", inputs: ["todoArr","display"], body: async (todoArr,display) => {
+display(await(
+todoArr[0]
+))
+}});
+
+define({id: "2c766825", inputs: ["TodoTxtItem","todoArr","display"], body: async (TodoTxtItem,todoArr,display) => {
+display(await(
+new TodoTxtItem(todoArr[0][1])
+))
+}});
+
+define({id: "f21d03a1", outputs: ["TodoTxtItem"], body: async () => {
+const {TodoTxtItem} = await import("https://cdn.jsdelivr.net/npm/jstodotxt@0.10.0/+esm");
+
+return {TodoTxtItem};
+}});
+
+define({id: "5944c040", inputs: ["todoArr","TodoTxtItem"], outputs: ["todos"], body: (todoArr,TodoTxtItem) => {
+const todos = todoArr.map(([date, text]) => {
+    const t = new TodoTxtItem(text);
+    t.edited = date;
+    return t;
+})
+return {todos};
+}});
+
+define({id: "1dbaba5e", inputs: ["todos","startDate","showCompleted"], outputs: ["isInvalidDate","extractDateField","data"], body: (todos,startDate,showCompleted) => {
+function isInvalidDate(date) {
+    return isNaN(date.getTime());
+}
+
+function extractDateField(sp, tag) {
+    const dateStr = sp.find(s => s.startsWith(`${tag}:`));
+    let date = dateStr ? new Date(dateStr.substring(tag.length + 1)) : null;
+    if (date !== null && isInvalidDate(date)) {
+        date = null;
+    }
+    return date;
+}
+
+const data = todos
+    .sort((a, b) => a.date - b.date)
+    .map(t => {
+        const sp = t.text.split(' ');
+        const {text, date, priority, edited} = t;
+        
+        const due = extractDateField(sp, 'due');
+        const threshold = extractDateField(sp, 't');
+
+        // const lastdate = Math.max(...[due, date, threshold, new Date(edited)]);
+        const lastdate = Math.max(...[due, date, threshold]);
+
+        let combined = '';
+        combined += `${t.priority ? `(${t.priority}) ` : ''}`;
+        combined += `${(t.contexts || []).map(c => `@${c} `).join('')}`;
+        combined += `${(t.projects|| []).map(p => `+${p} `).join('')}`;
+        combined += `${text}`;
+    
+        return {
+            ...t,
+            due, threshold, lastdate,
+            original: text,
+            text: combined,
+        };
+    })
+    .filter(t => t.date > startDate)
+    .filter(t => showCompleted ? true : !t.complete)
+    // .filter(t => showThreshold ? true : t.treshold > new Date())
+    .map((t, index) => {
+        return {...t, index}
+    })
+    // .slice(0, 5)
+return {isInvalidDate,extractDateField,data};
+}});
+
+define({id: "c6cd8fd5", inputs: ["display","data"], body: (display,data) => {
+display(data.map(d => d.edited));
+
+display(data);
+}});
+
+</script>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<h1 id="introduction" tabindex="-1"><a class="observablehq-header-anchor" href="#introduction">Introduction</a></h1>
+<span><!--
+// TODO
+- [ ] +meta click on task to open note
+- [ ] +meta customized text editor to edit note
+-->
+</span><p>View todos in a calendar, either vertically or horizontally</p>
+<p>Inspired by <a href="https://observablehq.com/@observablehq/plot-dot-plot">dot plot</a>.</p>
+<div id="cell-5ddbeb45" class="observablehq observablehq--block"></div>
+<div id="cell-1be95c3c" class="observablehq observablehq--block observablehq--loading"></div>
+<div><div id="cell-5d8a1eb7" class="observablehq observablehq--block"></div>
+<pre data-language="js"><code class="language-js"><span class="hljs-keyword">const</span> todoArr = <span class="hljs-title class_">FileAttachment</span>(<span class="hljs-string">'./data/todotxt.json'</span>).<span class="hljs-title function_">json</span>();
+</code></pre>
+</div><div><div id="cell-b5ab444b" class="observablehq observablehq--block observablehq--loading"></div>
+<pre data-language="js"><code class="language-js">todoArr[<span class="hljs-number">0</span>]
+</code></pre>
+</div><div><div id="cell-2c766825" class="observablehq observablehq--block observablehq--loading"></div>
+<pre data-language="js"><code class="language-js"><span class="hljs-keyword">new</span> <span class="hljs-title class_">TodoTxtItem</span>(todoArr[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>])
+</code></pre>
+</div><div id="cell-f21d03a1" class="observablehq observablehq--block"></div>
+<div><div id="cell-5944c040" class="observablehq observablehq--block"></div>
+<pre data-language="js"><code class="language-js"><span class="hljs-keyword">const</span> todos = todoArr.<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">[date, text]</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> t = <span class="hljs-keyword">new</span> <span class="hljs-title class_">TodoTxtItem</span>(text);
+    t.<span class="hljs-property">edited</span> = date;
+    <span class="hljs-keyword">return</span> t;
+})
+</code></pre>
+</div><div><div id="cell-1dbaba5e" class="observablehq observablehq--block"></div>
+<pre data-language="js"><code class="language-js"><span class="hljs-keyword">function</span> <span class="hljs-title function_">isInvalidDate</span>(<span class="hljs-params">date</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">isNaN</span>(date.<span class="hljs-title function_">getTime</span>());
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">extractDateField</span>(<span class="hljs-params">sp, tag</span>) {
+    <span class="hljs-keyword">const</span> dateStr = sp.<span class="hljs-title function_">find</span>(<span class="hljs-function"><span class="hljs-params">s</span> =&gt;</span> s.<span class="hljs-title function_">startsWith</span>(<span class="hljs-string">`<span class="hljs-subst">${tag}</span>:`</span>));
+    <span class="hljs-keyword">let</span> date = dateStr ? <span class="hljs-keyword">new</span> <span class="hljs-title class_">Date</span>(dateStr.<span class="hljs-title function_">substring</span>(tag.<span class="hljs-property">length</span> + <span class="hljs-number">1</span>)) : <span class="hljs-literal">null</span>;
+    <span class="hljs-keyword">if</span> (date !== <span class="hljs-literal">null</span> &amp;&amp; <span class="hljs-title function_">isInvalidDate</span>(date)) {
+        date = <span class="hljs-literal">null</span>;
+    }
+    <span class="hljs-keyword">return</span> date;
+}
+
+<span class="hljs-keyword">const</span> data = todos
+    .<span class="hljs-title function_">sort</span>(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a.<span class="hljs-property">date</span> - b.<span class="hljs-property">date</span>)
+    .<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">t</span> =&gt;</span> {
+        <span class="hljs-keyword">const</span> sp = t.<span class="hljs-property">text</span>.<span class="hljs-title function_">split</span>(<span class="hljs-string">' '</span>);
+        <span class="hljs-keyword">const</span> {text, date, priority, edited} = t;
+        
+        <span class="hljs-keyword">const</span> due = <span class="hljs-title function_">extractDateField</span>(sp, <span class="hljs-string">'due'</span>);
+        <span class="hljs-keyword">const</span> threshold = <span class="hljs-title function_">extractDateField</span>(sp, <span class="hljs-string">'t'</span>);
+
+        <span class="hljs-comment">// const lastdate = Math.max(...[due, date, threshold, new Date(edited)]);</span>
+        <span class="hljs-keyword">const</span> lastdate = <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">max</span>(...[due, date, threshold]);
+
+        <span class="hljs-keyword">let</span> combined = <span class="hljs-string">''</span>;
+        combined += <span class="hljs-string">`<span class="hljs-subst">${t.priority ? <span class="hljs-string">`(<span class="hljs-subst">${t.priority}</span>) `</span> : <span class="hljs-string">''</span>}</span>`</span>;
+        combined += <span class="hljs-string">`<span class="hljs-subst">${(t.contexts || []).map(c =&gt; <span class="hljs-string">`@<span class="hljs-subst">${c}</span> `</span>).join(<span class="hljs-string">''</span>)}</span>`</span>;
+        combined += <span class="hljs-string">`<span class="hljs-subst">${(t.projects|| []).map(p =&gt; <span class="hljs-string">`+<span class="hljs-subst">${p}</span> `</span>).join(<span class="hljs-string">''</span>)}</span>`</span>;
+        combined += <span class="hljs-string">`<span class="hljs-subst">${text}</span>`</span>;
+    
+        <span class="hljs-keyword">return</span> {
+            ...t,
+            due, threshold, lastdate,
+            <span class="hljs-attr">original</span>: text,
+            <span class="hljs-attr">text</span>: combined,
+        };
+    })
+    .<span class="hljs-title function_">filter</span>(<span class="hljs-function"><span class="hljs-params">t</span> =&gt;</span> t.<span class="hljs-property">date</span> &gt; startDate)
+    .<span class="hljs-title function_">filter</span>(<span class="hljs-function"><span class="hljs-params">t</span> =&gt;</span> showCompleted ? <span class="hljs-literal">true</span> : !t.<span class="hljs-property">complete</span>)
+    <span class="hljs-comment">// .filter(t =&gt; showThreshold ? true : t.treshold &gt; new Date())</span>
+    .<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">t, index</span>) =&gt;</span> {
+        <span class="hljs-keyword">return</span> {...t, index}
+    })
+    <span class="hljs-comment">// .slice(0, 5)</span>
+</code></pre>
+</div><div id="cell-c6cd8fd5" class="observablehq observablehq--block"></div>
+</main>
+</div>
