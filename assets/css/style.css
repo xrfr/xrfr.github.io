@@ -412,7 +412,6 @@ blockquote {
 }
 
 summary {
-    display: flex;
     align-items: center;
     outline: none;
 }
